@@ -28,6 +28,6 @@ def research_wiki(query):
     data = search_wiki(query)
     summary = []
     for i in data:
-        summary.append(get_summary(i))
+        summary.append(get_summary(i)[0])
 
-    return {'data:': data, 'summary:': summary}
+    return {'data': data, 'summary': summary}
