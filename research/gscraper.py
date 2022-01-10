@@ -28,8 +28,10 @@ def scrape_google(query):
 
     query = urllib.parse.quote_plus(query)
     response = get_source("https://www.google.co.uk/search?q=" + query)
+    response2 = get_source("https://scholar.google.com/scholar?q=" + query)
 
-    links = list(response.html.absolute_links)
+    links = list(response.html.absolute_links) + \
+        list(response2.html.absolute_links)
     google_domains = ('https://www.google.',
                       'https://google.',
                       'https://webcache.googleusercontent.',

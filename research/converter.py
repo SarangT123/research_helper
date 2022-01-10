@@ -40,9 +40,8 @@ def formated(query, qword=[]):
         output += title(link(google_links[i], google_titles[i]), 2)
         output += text(google_texts[i])
     output += title('Wikkipedia results', 1)
-    print(wiki_titles)
 
     for i in range(len(wiki_titles)):
-        output += title(link(wiki_titles[i], wiki_titles[i]), 2)
+        output += title(link('https://en.wikipedia.org/wiki/'+wiki_titles[i], wiki_titles[i]), 2)
         output += text(wiki_summary[i])
     return output

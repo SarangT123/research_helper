@@ -1,0 +1,7 @@
+beautifulsoup4==4.10.0
+bs4==0.0.1
+lxml==4.7.1
+Markdown==3.3.6
+pyinstaller==4.7
+requests-html==0.10.0
+urllib3==1.26.7
