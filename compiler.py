@@ -14,8 +14,7 @@ def delete_unwanted():
     unwanted_files = ['__pycache__', 'build',
                       'research', 'app.spec', 'app.py', 'app.spec', 'dist', 'compiler.py', 'requirements.txt']
     for i in unwanted_files:
-        if os.path.exists(i):
-            os.remove(i)
+        os.remove(i)
 
 # move all of the files in the dist folder to the parent directory
 
@@ -34,3 +33,6 @@ def main():
     move()
     delete_unwanted()
     print("Process complete. Compiled the app and deleted all of the unwanted file and folders.")
+
+
+main()
