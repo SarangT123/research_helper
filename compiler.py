@@ -11,10 +11,11 @@ def compile():
 
 def delete_unwanted():
     import os
-    unwanted_files = ['__pycache__', 'build',
-                      'research', 'app.spec', 'app.py', 'app.spec', 'dist', 'compiler.py', 'requirements.txt']
-    for i in unwanted_files:
+    unwanted_files_and_directories = ['__pycache__', 'build',
+                                      'research', 'app.spec', 'app.py', 'app.spec', 'dist', 'compiler.py', 'requirements.txt']
+    for i in unwanted_files_and_directories:
         os.remove(i)
+
 
 # move all of the files in the dist folder to the parent directory
 
